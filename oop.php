@@ -25,3 +25,8 @@ echo "<br>";
 $person2 = new person();
 $person2->getPersonInfo("Sakib", 30);
 $person2->showPersonInfo();
+
+echo "<br>";
+$person3 = new person();	
+$person3->getPersonInfo("Shakib", 35);
+$person3->showPersonInfo();
