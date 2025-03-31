@@ -97,3 +97,29 @@ $student1 = new Student("Morshed", 25, 101, "CSE");
 $student1->showStudentInfo();
 echo "<br>";
 $student2 = new Student("Sakib", 30, 102, "EEE");
+$student2->showStudentInfo();
+echo "<br>";
+
+
+class Student2{
+	public $name;
+	public $age;
+	public $roll;
+	public $department;
+
+	public function __construct($name,$age,$roll,$department){
+		$this->name=$name;
+		$this->age=$age;
+		$this->roll=$roll;
+		$this->department=$department;
+	}
+
+	public function showStudentInfo(){
+		echo "Name: $this->name <br>";
+		echo "Age: $this->age <br>";
+		echo "Roll: $this->roll <br>";
+		echo "Department: $this->department <br>";
+	}
+}		
+
+$student3 = new Student2("Shakib", 35, 103, "BBA");
