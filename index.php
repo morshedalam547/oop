@@ -39,3 +39,15 @@ $Lion = new Animal("Simba", 5, "Lion");
 	$parrot = new Animal("Polly", 2, "Parrot");
 	$parrot->showAnimalInfo();
 	$parrot->makeSound();	
+
+
+	class Dog extends Animal{
+	public function makeSound(){
+		echo "$this->name barks! <br>";
+	}
+	}
+
+	$dog = new Dog("Buddy", 3, "Dog");
+	$dog->showAnimalInfo();
+	$dog->makeSound();
+	echo "<br>";
