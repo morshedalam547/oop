@@ -90,3 +90,28 @@ $Lion = new Animal("Simba", 5, "Lion");
 	}		
 	
 	$student3 = new Student2("Shakib", 35, 103, "BBA");
+
+
+
+
+	class Fund{
+		private $fund = 0;
+
+		public function getFund(){
+			return $this->fund;
+		}
+
+		public function addFund($amount){
+			$this->fund += $amount;
+		}
+	}
+	$ourFund = new Fund();
+	$ourFund->addFund(1000);
+	echo $ourFund->getFund();
+	echo "<br>";
+	$ourFund->addFund(500);
+	echo $ourFund->getFund();
+	echo "<br>";
+	$ourFund->addFund(2000);
+	echo $ourFund->getFund();
+	echo "<br>";
